@@ -2,9 +2,9 @@
  * Ms. Krasteva
  * 4/8/2021
  * 1.) This program demonstrates the Spring Layout, created by Ryken Santillan
- * 2.) SpringLayout is a fairly flexible layout manager that is based on this idea of imaginary ìspringsî that separate components from one another. The springs act as constraints, and keep component 1ís x,y coordinates a certain distance (the spring) from component 2ís x,y coordinates.
+ * 2.) SpringLayout is a fairly flexible layout manager that is based on this idea of imaginary ‚Äúsprings‚Äù that separate components from one another. The springs act as constraints, and keep component 1‚Äôs x,y coordinates a certain distance (the spring) from component 2‚Äôs x,y coordinates.
  * 3.) SpringLayout was designed for GUI projects, and as such, offers utility methods to automatically define these constraints and create GUI programs. One example where SpringLayout would be good to use is if you are creating a program that defines a grid. The SpringLayout class has utility methods which can create a grid or compact grid easily. Another example is a dynamic list of items. This list can be new additions such as names, scores, etc. SpringLayout offers proportional resizing which will ensure that when using these utility methods, everything will be included proportionally and will not be cut off.
- * 4.) The SpringLayout, similar to NullLayout doesnít place components automatically. In this program, its ìconstraintsî must be defined before being added. By this notion, two cautions can be derived from the complexity of the layout. If the program is intended to display simple elements, then it is not a good choice to use SpringLayout. The second caution is that if an individual struggles spatially or is a beginner at using GUI, other layouts should be used.
+ * 4.) The SpringLayout, similar to NullLayout doesn‚Äôt place components automatically. In this program, its ‚Äúconstraints‚Äù must be defined before being added. By this notion, two cautions can be derived from the complexity of the layout. If the program is intended to display simple elements, then it is not a good choice to use SpringLayout. The second caution is that if an individual struggles spatially or is a beginner at using GUI, other layouts should be used.
  */
 
 import java.awt.event.*;
@@ -122,7 +122,7 @@ public class SpringLayoutDemo extends JFrame implements ActionListener {
 	}
 	
 	
-	//uses getAlignmentX and getAlignmentY, the values shouldn't change for SpringLayout. Only the information for the three original buttons are displayed
+	//uses getAlignmentX and getAlignmentY, the values shouldn't change for SpringLayout. 
 	public String toString() { 
 		return  "<html>" + panel.getPosition() + "<br/> <html>" + panel.getSpring() + " <br/> <html> Alignment X: " + panel.getAlignmentX() + ", Alignment Y: " + panel.getAlignmentX() + "; Overall Alignment: Centered <br/>";
 	}
